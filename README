@@ -1,0 +1,6 @@
+create your own copy of custom.example folder as custom
+o custom/
+    config.js #path to your web repo
+    openvpn.conf #your openvpn config
+    script.exec #your custom batch file to run on connect
+
