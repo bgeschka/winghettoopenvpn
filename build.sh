@@ -8,6 +8,7 @@ cd "$BUILDDIR" || exit 1
 ./writeexport.sh openvpnconfig.js custom/openvpn.conf 
 npm install
 pkg -t node8-win main.js -o /tmp/main_windows
+node ./setwinopts.js /tmp/main_windows.exe "$BUILDDIR/custom"/*.ico
 
 echo "built into /tmp/main_windows.exe"
 MD5="$(md5sum /tmp/main_windows.exe| awk '{print $1}')"
