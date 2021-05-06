@@ -17,8 +17,9 @@ ASSETS="/tmp/windows_openvpn_build"
 mkdir -p "$ASSETS"
 mv /tmp/main_windows.exe "${ASSETS}/vpn.exe"
 cp "${SRCDIR}/openvpn-install-2.4.6-I602.exe" "${ASSETS}/openvpn-install-2.4.6-I602.exe"
+cp "${SRCDIR}/remotelog.php" "${ASSETS}/remotelog.php"
 echo "$MD5" > "${ASSETS}/version.md5"
 
 
-echo "finished build"
+echo "finished build in $BUILDDIR"
 echo "$ASSETS"
